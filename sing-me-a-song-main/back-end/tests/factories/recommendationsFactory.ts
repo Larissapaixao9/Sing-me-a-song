@@ -55,3 +55,13 @@ export async function recomendantionsWithScore(score:number){
 
     return result
 }
+
+export async function simpleRecomendation(){
+        return {
+        id:1,
+        "name": "CB jr - Xote dos Milagres"+ faker.name.fullName(),
+        "youtubeLink": "https://www.youtube.com/watch?v=chwyjJbcs1Y",
+        "score":1
+        }
+}
+
