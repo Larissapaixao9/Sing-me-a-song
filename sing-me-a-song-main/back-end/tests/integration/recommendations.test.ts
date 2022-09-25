@@ -229,4 +229,6 @@ describe('Testa a rota GET /recommendations/top/:amount', ()=>{
         expect(result.body.length).toBe(10)
 
     })
+
+    //adicionar erros
 })
