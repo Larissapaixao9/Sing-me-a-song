@@ -20,6 +20,7 @@ describe("Testes para a pagina home :)", () => {
 
     cy.get('input[placeholder="https://youtu.be/..."').type(recommendation.youtubeLink)
 
+    //Cy.intercept match any request that exactly matches the URL
     cy.intercept("POST", "http://localhost:5000/recommendations").as("insertRecommendation")
     
     cy.get("button").click()

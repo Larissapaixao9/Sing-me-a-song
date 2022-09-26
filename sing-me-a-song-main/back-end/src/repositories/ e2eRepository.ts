@@ -23,6 +23,7 @@ async function insertDatabaseForTests() {
   });
 }
 
+//utilizar nos testes do cypress
 export const e2eRepository = {
   reset,
   insertDatabaseForTests,

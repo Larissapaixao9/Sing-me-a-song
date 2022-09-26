@@ -29,6 +29,7 @@ const data = [
 
       cy.visit(`http://localhost:3000/`)
 
+      //Cy.intercept match any request that exactly matches the URL 
       cy.intercept("GET", "http://localhost:5000/recommendations/top/10").as("getTopRecommendations")
 
       cy.contains("Top").click()
