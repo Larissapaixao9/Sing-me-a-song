@@ -1,10 +1,3 @@
-Cypress.Commands.add("resetDatabase", () => {
-    cy.request("POST", "http://localhost:5000/e2e/reset", {});
-  });
-  
-  Cypress.Commands.add("insertDatabase", () => {
-    cy.request("POST", "http://localhost:5000/e2e/insert", {});
-  });
 // ***********************************************
 // This example commands.js shows you how to
 // create various custom commands and overwrite
